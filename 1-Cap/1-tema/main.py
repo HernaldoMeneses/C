@@ -35,7 +35,7 @@ class Topico:
         print(f"\n\tDefence - : {self.def_tese}")
         print(f"\n\tSolution - : {self.solution}")
         print(f"\nBrain_Storm - : {self.brain_storm}\n")
-        cout =1
+        cout = 1
         for i in (self.frases):
             print(f"Frase - : {cout} {i}")
             cout = cout +1
