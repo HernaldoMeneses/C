@@ -35,7 +35,7 @@ class Topico:
         print(f"\n\tDefence - : {self.def_tese}")
         print(f"\n\tSolution - : {self.solution}")
         print(f"\nBrain_Storm - : {self.brain_storm}\n")
-        cout = 1
+        cout=1
         for i in (self.frases):
             print(f"Frase - : {cout} {i}")
             cout = cout +1
@@ -43,7 +43,6 @@ class Topico:
 
 #_____________________________________________________________________/
 
-file_ = 'desenv.txt'
 def read_file(file_):
     # Nome do arquivo
     nome_arquivo = file_
@@ -66,23 +65,44 @@ def read_file(file_):
 
 #_____________________________________________________________________/
 
-# Exemplo de uso da classe
-tema_ = 'Origens de C e Padrão (ANSI)'
-tese_ = 'Inventada e implementada por Dennis Ritchie em um DEC PDP-11 Muitas Variantes'
+def read_lines_file(file_line_read):
+    # Nome do arquivo
+    nome_arquivo = file_line_read
+
+    # Lista para armazenar as linhas do arquivo
+    list_lines = []
+    # Tente abrir o arquivo para leitura
+    try:
+        with open(nome_arquivo, 'r') as arquivo:
+            # Leia as linhas do arquivo e armazene-as na lista
+            #list_lines = arquivo.readlines()
+            list_lines = [linha.strip() for linha in arquivo.readlines()]
+            
+        return list_lines
+
+    except FileNotFoundError:
+        print(f"O arquivo '{nome_arquivo}' não foi encontrado.")
+    except Exception as e:
+        print(f"Ocorreu um erro: {e}")
+
+
+#_____________________________________________________________________/
+
+
+
+file_ = 'data\\tema.txt'
+tema_ = read_file(file_)
+file_ = 'data\\tese.txt'
+tese_ = read_file(file_)
+file_ = 'data\\def_tese.txt'
 def_tese_ = read_file(file_)
-solution_ = 'O ANSI (American National Standards Institute) em 1983, estabeleceu um comitê que definiria a Linguagem C'
-brain_storm_ = [
-    'Dennis Ritchie',
-    'UNIX',
-    'BCPL',
-    'Martin Richards',
-    'Ken Thompson',
-    'Popularidade dos Microcomputadores',
-    'Ausência de Padrões',
-    'ANSI - American National Standards institute',
-    'Compiladores']
-frases_ = [
-    'frase1','frase2']
+file_ = 'data\\solution.txt'
+solution_ = read_file(file_)
+file_ = 'data\\brain_storm.txt'
+brain_storm_ = read_lines_file(file_)
+file_ = 'data\\frases.txt'
+frases_ = read_lines_file(file_)
+
 tab_ =  {
     'Campo1': ['registe1', 'registe2', 'registe3', 'registe4'],
     'Campo2': [1, 2, 3, 4],
