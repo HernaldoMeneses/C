@@ -37,5 +37,5 @@ Usando essas sintaxes Markdown, podemos criar uma estrutura de texto bem organiz
 
 ---
 
-&copy; 2024 Meu Site
+&copy; 2024 Analista: Hernaldo Meneses
 
