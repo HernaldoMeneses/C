@@ -8,6 +8,7 @@
 ### - Capítulo 5  [loading]()
 
 
+---
 [Próximo](https://github.com/HernaldoMeneses/C/blob/main/2-Cap%C3%ADtulo/2.1-Into.md) | [Voltar](https://github.com/HernaldoMeneses/C/blob/main/README.md) |   [Início](https://github.com/HernaldoMeneses/C/blob/main/README.md) |
 ---
 
