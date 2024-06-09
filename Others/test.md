@@ -43,3 +43,6 @@ Usando essas sintaxes Markdown, podemos criar uma estrutura de texto bem organiz
 
 &copy; 2024 Analista: Hernaldo Meneses
 
+2.4.6
+42/816
+Espessificadores de tipo de classe de Armazenamento
